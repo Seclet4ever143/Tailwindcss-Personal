@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aedrian Puspus - Portfolio of a third-year BSIT student showcasing projects, skills, and blog posts in web development and technology.">
+  <link href="./output.css" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+<body class="flex flex-col min-h-screen text-cyan-100">
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-gray-700 py-3 shadow-sm">
+    <nav class="container mx-auto px-5 flex justify-between items-center">
+      <a href="index.html" class="text-warning text-2xl font-bold hover:text-orange-500 duration-400">My Portfolio</a>
+      <button id="menu-btn" class="block md:hidden border p-2">
+        <!-- Icon for the hamburger menu -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <!-- Navigation Menu -->
+      <ul id="menu" class="hidden md:flex space-x-4 font-bold text-sm px-10">
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Home</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Projects</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Skills</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Blog</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <ul class="flex flex-col p-4 space-y-2 text-black items-center">
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Home</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Projects</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Skills</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Blog</a></li>
+        <li><a href="#" class="nav-link hover:text-orange-500 hover:underline transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-shrink-0">
+    <header class="py-5 bg-gradient-to-r from-gray-500 to-gray-300 text-center">
+      <div class="container mx-auto px-5 pb-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center px-10">
+          <!-- Header text content -->
+          <div class="text-center md:text-left">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-700 py-1 px-3 inline-block mb-4 font-serif">
+              Code &middot; Innovate &middot; Optimize
+            </span>
+            <p class="text-3xl font-serif mb-4">Software Developer</p>
+            <h1 class="text-5xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-700 pb-2">Code your vision into reality</h1>
+            <div class="flex justify-center md:justify-center md:ml-5 space-x-5">
+              <a href="resume.html" class="btn bg-gray-700 text-white hover:bg-gray-300 py-2 px-3 rounded-md btn-lg">Resume</a>
+              <a href="projects.html" class="btn bg-transparent text-black border-2 border-gray-700 hover:bg-gray-300 rounded py-2 px-3 btn-lg">Projects</a>
+            </div>
+          </div>
+          <!-- Header profile picture -->
+          <div class="mt-5 md:mt-0 flex justify-center">
+            <img class="profile-img md:max-w-sm rounded-full shadow-lg mx-auto min-w-0" src="/src/img/yannyann.png" alt="profile">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-5 bg-gradient-to-r from-gray-500 to-gray-300">
+      <div class="container mx-auto px-5">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4 text-gradient">About Me</h2>
+          <p class="text-lg font-light text-black mb-4">Hello! I'm Aedrian Puspus, a third-year BSIT student with a passion for technology and a drive to learn and grow. As a student, I am constantly exploring new concepts and honing my skills in both front-end and back-end development.</p>
+          <p class="font-light text-black">I am enthusiastic about the ever-evolving world of IT and strive to build meaningful, user-friendly web experiences. While I am proud of what I’ve accomplished so far, I remain humble and recognize that there is always more to learn. My goal is to continue developing my expertise and contribute to creating innovative solutions that push the boundaries of technology.</p>
+          <p class="font-light text-black">Thank you for visiting my portfolio, and I look forward to connecting with others who share a passion for technology and learning.</p>
+          <!-- Social Media Icons -->
+          <div class="flex justify-center mt-4">
+            <a class="text-gradient text-2xl mx-2" href="#"><i class="bi bi-twitter"></i></a>
+            <a class="text-gradient text-2xl mx-2" href="#"><i class="bi bi-linkedin"></i></a>
+            <a class="text-gradient text-2xl mx-2" href="#"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5 bg-gradient-to-r from-gray-500 to-gray-300">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-5">
+          <h2 class="text-4xl font-bold mb-4 text-gradient">Projects</h2>
+          <p class="text-lg font-light mb-4 text-black">Here are some of the projects I've worked on:</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Cards -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <img src="/src/img/text-based.png" alt="Project Thumbnail" class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-bold text-lg mb-2">Text-Based Game</h3>
+            <p class="text-sm mb-4">An interactive text-based game where players can engage in a chat-based adventure. This project showcases my skills in handling user input and creating dynamic storylines.</p>
+            <a href="project-link" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <img src="/src/img/calculator.png" alt="Project Thumbnail" class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-bold text-lg mb-2">Calculator</h3>
+            <p class="text-sm mb-4">A fully functional calculator application that performs basic arithmetic operations. This project demonstrates my proficiency in JavaScript and UI design.</p>
+            <a href="project-link" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <img src="/src/img/attendance.png" alt="Project Thumbnail" class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="font-bold text-lg mb-2">Attendance</h3>
+            <p class="text-sm mb-4">An attendance tracking system designed for educational institutions. This project highlights my ability to manage and process data effectively.</p>
+            <a href="project-link" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section class="py-5 bg-gradient-to-r from-gray-500 to-gray-300">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-5">
+          <h2 class="text-4xl font-bold mb-4 text-gradient">Skills</h2>
+          <p class="text-lg font-light mb-4 text-black">Here are some of the technologies and tools I excel in:</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill Items -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">UI/UX Design</h3>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">Photoshop</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-pink-500 h-2.5 rounded-full" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">Canva</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 100%;"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">Befunky</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">Web Development</h3>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">HTML & CSS</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">JavaScript</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 30%;"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">React & Angular</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-green-500 h-2.5 rounded-full" style="width: 10%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">Backend Development</h3>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">Postgres SQL</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-teal-500 h-2.5 rounded-full" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">Python & Django</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 10%;"></div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700">Node.js & Express</p>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-red-500 h-2.5 rounded-full" style="width: 20%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-gradient-to-r from-gray-500 to-gray-300">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-5">
+          <h2 class="text-4xl font-bold mb-4 text-gradient">Testimonials</h2>
+          <p class="text-lg font-light mb-4 text-black">What my peers say about working with me:</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8">
+          <!-- Testimonial Card -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <p class="text-sm mb-4">"Working with Aedrian has been a great experience. His commitment to learning and his ability to approach challenges with a positive attitude is inspiring. He's always open to feedback and continuously strives to improve."</p>
+            <h4 class="font-bold text-lg">Billy Terante</h4>
+            <p class="text-gray-500">BSIT-III, Caraga State University</p>
+          </div>
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <p class="text-sm mb-4">"Aedrian is not only technically skilled but also a supportive teammate. His passion for technology is evident in his work, and he remains humble and focused on learning and growing."</p>
+            <h4 class="font-bold text-lg">Lawrence Sabrido</h4>
+            <p class="text-gray-500">BSIT-III, Caraga State University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-5 bg-gradient-to-r from-gray-500 to-gray-300">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-5">
+          <h2 class="text-4xl font-bold mb-4 text-gradient">Blog</h2>
+          <p class="text-lg font-light mb-4 text-black">Read my latest articles and thoughts on technology:</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Blog Post Card 1 -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">Exploring the Basics of Web Development</h3>
+            <p class="text-sm mb-4">A beginner’s guide to understanding HTML, CSS, and JavaScript, and how they come together to create dynamic websites.</p>
+            <a href="blog-post-link-1" class="text-blue-500 hover:underline">Read More</a>
+          </div>
+          <!-- Blog Post Card 2 -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">Designing User-Friendly Interfaces: Tips for Beginners</h3>
+            <p class="text-sm mb-4">An overview of UI/UX design principles and practical tips to create intuitive and accessible interfaces for all users.</p>
+            <a href="blog-post-link-2" class="text-blue-500 hover:underline">Read More</a>
+          </div>
+          <!-- Blog Post Card 3 -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">My Journey with JavaScript: From Struggles to Solutions</h3>
+            <p class="text-sm mb-4">Sharing my experience of learning JavaScript, including the challenges I faced and the solutions that helped me overcome them.</p>
+            <a href="blog-post-link-3" class="text-blue-500 hover:underline">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards/Certifications Section -->
+    <section class="py-5 bg-gradient-to-r from-gray-500 to-gray-300">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-5">
+          <h2 class="text-4xl font-bold mb-4 text-gradient">Awards & Certifications</h2>
+          <p class="text-lg font-light mb-4 text-black">Here are some of the awards and certifications I've earned:</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Award/Certification Card 1 -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">Dean's Lister</h3>
+            <p class="text-sm mb-4">Recognized for academic excellence by maintaining a high GPA since my first year in the BSIT program at Caraga State University.</p>
+          </div>
+          <!-- Award/Certification Card 2 -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">Participation in Startup Awareness Event</h3>
+            <p class="text-sm mb-4">Participated in the Startup Awareness event hosted by the DICT - Caraga Region and ICT Industry Development Bureau (IIDB), in support of the Bagong Pilipinas Serbisyo Fair 2024 at Caraga State University.</p>
+          </div>
+          <!-- Award/Certification Card 3 -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <h3 class="font-bold text-lg mb-2">SoloLearn Certifications</h3>
+            <p class="text-sm mb-4">Earned certifications in various programming languages and technologies through the SoloLearn platform, showcasing my continuous learning and skill development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-gradient-to-r from-gray-500 to-gray-300">
+      <div class="text-center mb-5">
+        <h2 class="text-4xl font-bold mb-4 text-gradient">Contacts</h2>
+        <p class="text-lg font-light mb-4 text-black">Here are some of my contacts:</p>
+      </div>
+      <div class="container mx-auto px-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Contact Cards -->
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <i class="fas fa-envelope text-primary mb-2"></i>
+            <h4 class="text-xl font-bold mb-2 text-center">Facebook</h4>
+            <hr class="my-4 mx-auto" />
+            <p class="small text-center"><a href="https://www.facebook.com/kirito.puspus">Aedrian</a></p>
+          </div>
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <i class="fas fa-envelope text-primary mb-2"></i>
+            <h4 class="text-xl font-bold mb-2 text-center">Email</h4>
+            <hr class="my-4 mx-auto" />
+            <p class="small text-center"><a href="mailto:aedrian.puspus@carsu.edu.ph">aedrian.puspus@carsu.edu.ph</a></p>
+          </div>
+          <div class="bg-white text-black p-6 rounded shadow-md">
+            <i class="fas fa-envelope text-primary mb-2 text-center"></i>
+            <h4 class="text-xl font-bold mb-2 text-center">Instagram</h4>
+            <hr class="my-4 mx-auto" />
+            <p class="small text-center"><a href="https://Instagram.com/yanyan_senpai">yanyan_senpai</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-t bg-gray-700 py-4 text-center">
+    <p class="mb-0 bg-gradient-to-t bg-gray-700 text-white">&copy; 2024 Aedrian Puspus. All rights reserved.</p>
+  </footer>
+
+  <!-- Script for mobile menu toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
